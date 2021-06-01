@@ -1,0 +1,246 @@
+.App {
+  text-align: center;
+}
+
+html, body {
+  background-image: url('./assets/bg-intro-desktop.png');
+  background-color: hsl(0, 100%, 74%);
+}
+@media all and (max-width: 600px) {
+  html, body {
+      background-image: url('./assets/bg-intro-mobile.png');
+      background-color: hsl(0, 100%, 74%);
+  }
+}
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+.container{
+  padding-right: 40px;
+  padding-left: 40px;
+  height: 100vh;
+  display: flex;
+  justify-content: space-around;  
+  align-items: center;
+} @media all and (max-width: 600px) {
+  .container{
+      padding-right: 40px;
+      padding-left: 40px;
+      height: 100vh;
+      display: flex;
+      justify-content: center;  
+      align-items: center;
+      flex-direction: column;
+  }
+}
+
+.header_title {
+ color: white;
+ font-size: 40px;
+ padding-bottom: 20px
+} @media all and (max-width: 600px) {
+  .header_title {
+      color: white;
+      font-size: 20px;
+      padding-bottom: 20px;
+      padding-top: 30px;
+}
+}
+
+.a_paragraph {
+  color:white;
+  font-size:20px;
+  text-align: left;
+  width: 68%;
+} @media all and (max-width: 600px) {
+  .a_paragraph {
+      color:white;
+      font-size:16px;
+      text-align: center;
+      padding-bottom: 16px;
+      /* width: 68%; */
+      /* display: inline-block; */
+}
+}
+
+.form_container{
+  background-color:white;
+  padding-top: 20px;
+  border-radius: 10px;
+  text-align: center;
+  width: 490px;
+  box-shadow: 0 6px rgba(0,0,0,0.2);
+}
+@media all and (max-width: 600px) {
+  .form_container{
+      width: 295px;
+  }
+}
+.div1{
+  background-color: red;
+}
+.div2{
+  background-color: green;
+}
+
+.try_button {
+  background-color: rgb(121, 57, 194);
+  font-size: 15px;
+  padding: 14px 40px;
+  border-radius: 8px;
+  border: none;
+  border-color: transparent;
+  color: white;
+  width: 100%;
+  box-shadow: 0 6px rgba(0,0,0,0.2);
+  margin-bottom: 20px;
+}
+@media all and (max-width: 600px) {
+  .try_button{
+      font-size: 15px;
+      padding: 14px 40px;
+      border-radius: 8px;
+      border: none;
+      border-color: transparent;
+      color: white;
+      box-shadow: 0 6px rgba(0,0,0,0.2);
+      margin-bottom: 20px;
+  }
+}
+
+#firstname {
+  width: 80%;
+  border-radius: 8px;
+  font-size: 13px;
+  height: 50px;
+  border-color: gray;
+  margin-bottom: 20px;
+  padding-left: 20px;
+  outline: none;
+  
+}
+#firstname:hover{
+  border-color:rgb(121, 57, 194);
+}
+
+#lastname {
+  width: 80%;
+  border-radius: 8px;
+  font-size: 13px;
+  height: 50px;
+  border-color: gray;
+  margin-bottom: 20px;
+  padding-left: 20px;
+  outline: none;
+}
+#lastname:hover{
+border-color:rgb(121, 57, 194);
+}
+
+#email {
+  width: 80%;
+  border-radius: 8px;
+  font-size: 13px;
+  height: 50px;
+  border-color: gray;
+  margin-bottom: 20px;
+  padding-left: 20px;
+  outline: none;
+}
+#email:hover{
+  border-color:rgb(121, 57, 194);
+}
+
+#password {
+  width: 80%;
+  border-radius: 8px;
+  font-size: 13px;
+  height: 50px;
+  border-color: gray;
+  margin-bottom: 20px;
+  padding-left: 20px;
+  outline: none;
+}
+#password:hover{
+  border-color:rgb(121, 57, 194);
+}
+
+.freetrial_button {
+  background-color: hsl(155, 52%, 55%);
+  font-size: 15px;
+  padding: 12px 28px;
+  border-radius: 8px;
+  border: none;
+  border-color: transparent;
+  color: white;
+  width: 80%;
+  box-shadow: 0 2px rgba(27, 211, 82, 0.2);
+  margin-bottom: 20px;
+}
+
+.small_text {
+  color: gray;
+  padding-bottom: 40px;
+  font-size: 12px
+}
+.red_text{
+  color: red;
+  font-weight: bold;
+}
+@media all and (max-width: 600px) {
+  .small_text {
+      padding-bottom: 10px;
+  } 
+}
+.p-r {
+  padding-left: 0px;
+}
+@media all and (max-width: 600px) {
+  .p-r {
+      padding-right: 0;
+      text-align: center;
+  }
+}
+
+.p-l {
+  padding-right: 50px;
+}
+@media all and (max-width: 600px) {
+  .p-l {
+      padding-right: 0;
+      text-align: center;
+      padding-top: 20px;
+      padding-bottom: 20px;
+   }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
